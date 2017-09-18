@@ -3,7 +3,7 @@ sudo: required
 dist: trusty
 
 before_install:
-  - make install
+  - sudo make install
 
 script:
   - make
