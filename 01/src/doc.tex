@@ -1,7 +1,7 @@
-\documentclass[12pt, a4paper, titlepage]{article}
+\documentclass[11pt, a4paper, titlepage]{article}
 
 % Set document dimensions
-\usepackage[paper=a4paper,top=3cm,left=1.5cm,right=2cm,bottom=1.5cm,includefoot]{geometry}
+\usepackage[paper=a4paper,top=2cm,left=1.8cm,right=1.8cm,bottom=2cm, includefoot]{geometry}
 \usepackage{float}
 \usepackage[final]{pdfpages} % inludesvg
 
@@ -9,75 +9,47 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[czech]{babel}
+\usepackage{fancyhdr}
+
 
 \usepackage{background}
-
+\setlength{\headheight}{3em} 
 
 
 \begin{document}
 	\input{01/src/_titlepage.tex}
-	\backgroundsetup{
-		position=current page.south,
-		nodeanchor=south west,
-		scale=0.1,
-		color=black,
-		opacity=1,
-		hshift=32em,
-		vshift=-5em,
-		angle=0,
-		contents={%
-		  iZUB\includegraphics[width=100em,height=50em]{./assets/teeth.png}
-		  }%
-		}
-	\noindent\makebox[\linewidth]{\rule{16cm}{0.4pt}}
+	\pagestyle{fancy}
+	\rhead{\includegraphics[height=3em]{./assets/teeth.png}}
+	\lfoot{\emph{VUT FIT - INI}}
+	\rfoot{\emph{Tým INIcializace}}
+
 	\begin{center}
 		\section*{Portfolio služeb}
 	\end{center}
 
-	\fontsize{14pt}{16pt}\selectfont
+	\noindent Jsme společnost IZUB a poskytujeme komplexní řešení pro malé, střední i ty největší \textbf{zubařské ordinace} nejen na území České i Slovenské republiky.
 
-	\noindent Následující dokument představuje kompletní seznam služeb poskytovaných naší společností. Obsahuje, vývoj nových služeb a průběžné plány na zlepšování služeb. Zahrnujé také služby třetích stran, které jsou nedílnou součístí naší nabídky zákazníkům. 
+	\noindent Následující dokument představuje \textbf{kompletní seznam služeb} poskytovaných naší společností. Obsahuje vývoj nových služeb i průběžné plány na zlepšování služeb. Zahrnujé také služby třetích stran, které jsou nedílnou součástí nabídky našim zákazníkům. 
 
-	\vspace{1em}
+	\subsection*{Název služby: Správa kartotéky pacientů}
 
-	\noindent Jsme společnost IZUB a poskytujeme komplexní řešení pro malé, středně velké i ty největší zubařské ordinace nejen na území České Republiky.
-	\vspace{1em}
-
-	\noindent\makebox[\linewidth]{\rule{16cm}{0.4pt}}
-
-	\vspace{2em}
-
-	\section*{Název služby: Správa kartotéky pacientů}
-
-	\subsection*{Popis služby}
+	\subsubsection*{Popis služby}
 	\begin{itemize}
 		\item Přehled o všech evidovaných pacientech
-		\item Možnost vlastního definování položek u každého pacienta
+		\item Možnost vlastního definování datových položek pro každého pacienta
 		\item Rychlé a intuitivní editování položek i uživateli neznalými práce s PC
 	\end{itemize}
 
-	\subsection*{Typ služby}
+	\subsubsection*{Typ služby: Bussines}
 
-	Bussines typ
+	\subsubsection*{Stav služby: Katalog služeb}
 
-	\subsection*{Stav služby}
+	\subsubsection*{Cena}
+	\noindent Cena se odvíjí od základní ceny balíku standard, která je 100 000 Kč za licenci. U balíku standard lze v případě zájmu poskytnout školení uživatelů systému za příplatek 10 000 Kč či vytvoření vzhledu systému na míru za 15 000 Kč.
 
-	Katalog služeb
-
-	\subsection*{Cena}
-	\noindent Cena se odvíjí od základní ceny balíku standard, která je 100 000 Kč za licenci. U balíku standard lze v případě zájmu poskytnout školení uživatelů systému za příplatek 10 000 Kč či vytvoření designu na míru za 15 000 Kč.
-
-	\subsection*{Balíčky}
-	V nabídce jsou následující balíčky, přičemž požívaný balíček po domluvě ihned změnit:
-
-	\vspace{1em}	
-
-	\newpage
-
-	\noindent\makebox[\linewidth]{\rule{16cm}{0.4pt}}
+	\subsubsection*{Balíčky}
 
 	\begin{itemize}		
-
 		\item \textbf{Balíček STANDARD} Základní balíček pro malé ordinace. Maximální počet pacientů 512, bez možnosti vlastního vzhledu, školení není v ceně. Omezení na jednu ordinaci v provozu; cena 100 \% základní ceny.
 
 		\item \textbf{Balíček MEDIUM} Střední balíček pro středně velké ordinace. Maximální počet pacientů 2048, bez možnosti vlastního vzhledu, V ceně je základní školení pracovníků včetně možnosti pžipojení až tří ordinací. Cena 200 \% základní ceny.
@@ -85,102 +57,85 @@
 		\item \textbf{Balíček PRO} Neomezený pro velké velké ordinace a zubařské korporáty. Maximální počet pacientů neomezen, možnost vlastního vzhledu, V ceně je důkladné proškolení pracovníků. Neomezené množství ordinací. Pětinásobná cena oproti balíčku STANDARD.
 	\end{itemize}
 
-	\subsection*{SLA}
+	\subsubsection*{SLA}
 
 	Poskytujeme absolutní ochranu dat, pravidelné každodenní zálohování a MTBF dva měsíce. Dále nabízíme i částečnou funkcionalitu v případě výpadku internetové konektivity.
 
-	\subsection*{Závislosti}
+	\subsubsection*{Závislosti}
 
 	Hosting, případně vlastní server v rámci IT infrastruktury
 
-	\subsection*{Reference}
+	\subsubsection*{Reference}
 	Systém je dlouhodobě nasazen ve společnostech \texttt{Toothland s.r.o} a \texttt{U zubní víly a.s}.
 
-	\subsection*{Vlastnictví služby}
+	\subsubsection*{Vlastnictví služby}
 
-	Vlastníkem je společnost \texttt{iZUB s.r.o.}, interní služba apolečnosti \texttt{iZUB s.r.o.}
+	Vlastníkem je společnost \texttt{IZUB s.r.o.}, interní služba apolečnosti \texttt{IZUB s.r.o.}
 
-	\section*{Název služby: Webové stránky s rezervačním systémem}
+	\subsection*{Název služby: Webové stránky s rezervačním systémem}
 
-	\subsection*{Popis služby}
+	\subsubsection*{Popis služby}
 	\begin{itemize}
 		\item Tvorba webových stránek na míru.
 		\item Návrh, kódování a nasazení unikátní šablony.
 		\item Redakční systém navržený pro potřeby zubní ordinace
 	\end{itemize}
 
-	\newpage
-	\noindent\makebox[\linewidth]{\rule{16cm}{0.4pt}}
+	\subsubsection*{Typ služby:  Business}
 
-	\subsection*{Typ služby}
-	Business
+	\subsubsection*{Stav služby: Pipeline}
 
-	\subsection*{Stav služby}
-	Pipeline
-
-	\subsection*{Reference}
+	\subsubsection*{Reference}
 	Plné nasazení služby u společností \texttt{U zubní víly a.s.} a \texttt{Ordinace U kováře}.
 
-	\subsection*{Ceník}
+	\subsubsection*{Ceník}
 	Základní cena 30 000 Kč, Plně respoonzivní design + 30 \% ze základní ceny, vlastní redakční systém + 50 \% ze základní ceny, aktualizace obsahu 600 Kč za hodinu práce editora.
 
-	\subsection*{Plány}
+	\subsubsection*{Plány}
 	Plánujeme vlastní mobilní aplikaci.
 
-	\subsection*{Závislosti}
+	\subsubsection*{Závislosti}
 	Hosting, případně vlastní server v rámci IT infrastruktury.
 
-	\subsection*{SLA}
+	\subsubsection*{SLA}
 	Pravidelné zálohování dat, ochrana osobních údajů, částečná funkčnost i při výpadku internetové konektivity
 
-	\subsection*{Vlastnictví služby}
+	\subsubsection*{Vlastnictví služby}
 	Interní služba \texttt{iZUB s.r.o}
 
-	\newpage
+	\subsection*{Název služby: Zprostředkování a zajištění hostingu aplikací}	
 
-	\noindent\makebox[\linewidth]{\rule{16cm}{0.4pt}}
-
-	\section*{Název služby: Zprostředkování a zajištění hostingu aplikací}	
-
-	\subsection*{Popis služby}
+	\subsubsection*{Popis služby}
 	\begin{itemize}
-		\item Objednání webhostingu, nainstalování a nakonfigurování požadovaných služeb. Výběr vhodné hardwarové konfiguraje a parametrů.služeb.
+		\item Objednávka webhostingu, nainstalování a nakonfigurování požadovaných služeb včetně výběru vhodné hardwarové konfigurace a parametrů.
 		\item Udržování v chodu a případná technická podpora pro řešení neočekávatelných problémů
 	\end{itemize}
 
-	\subsection*{Typ služby}
-	Technical
+	\subsubsection*{Typ služby: Technical}
 
-	\subsection*{Stav služby}
-	Katalog služeb
+	\subsubsection*{Stav služby: Katalog služeb}
 
-	\subsection*{Plány}
+	\subsubsection*{Plány}
 	Plánujeme nabídku hostování služeb na naššich serveru
 
-	\subsection*{Balíčky}
+	\subsubsection*{Balíčky}
 	Služba je poskytována pouze v jednom balíčku, ke kterému je nutno přičíst práci servisních techniků. 
 
-	\subsection*{Cena}
+	\subsubsection*{Cena}
 	Pořizovací cena služby je 4 000 Kč, poté 600 Kč za hodinu práce technického pracovníka v rámci 24/7 technické podpory.
 
-	\subsection*{Vlastnictví služby}
+	\subsubsection*{Vlastnictví služby}
 	Outsourcovaná služba, nabízíme výběr ze tří poskytovatelů webhostingů, se kterými máme sjednané zvýhodněné podmínky.
 
-	\subsection*{Reference}
+	\subsubsection*{Reference}
 	Službu využívá společnost \texttt{Toothland s.r.o}.
 
-	\newpage
-
-	\noindent\makebox[\linewidth]{\rule{16cm}{0.4pt}}
-
-	\subsection*{Závislosti}
+	\subsubsection*{Závislosti}
 	Službu nelze objednat samostatně ale pouze jako doplňkovou službu ke službě kterou je třeba hostovat.
 
-	
+	\subsection*{Název služby: IT infrastruktura}
 
-	\section*{Název služby: IT infrastruktura}
-
-	\subsection*{Popis služby}
+	\subsubsection*{Popis služby}
 	\begin{itemize}
 		\item Kompletní zajištění infrastruktury dle požadavků ostatní služeb
 		\item Zabebezpečení budovy, internetová konektivita, konektivita přístrojů jejich vzájemná kooperace
@@ -188,11 +143,10 @@
 		\item Vybavení ordinací a kanceláří
 	\end{itemize}
 
-	\subsection*{Typ služby}
-	Technical
+	\subsubsection*{Typ služby: Technical}
 
-	\subsection*{Balíčky}
-	Služba je velmi individuální dle požadavků zákazníka. Níze uveden pouze orientační cenník dle předchozích nasazení. 
+	\subsubsection*{Balíčky}
+	Služba je velmi individuální dle požadavků zákazníka. Níže uveden pouze orientační ceník dle předchozích nasazení. 
 
 	\begin{itemize}
 		\item Kamerový systém - 20 000 Kč dle rozsahu
@@ -204,24 +158,15 @@
 		\item Konektivita přístrojů - dle specifikace
 	\end{itemize}
 
-	\subsection*{Cena}
+	\subsubsection*{Cena}
 	Cena se odvíjí od konkrétního nasazení a potřebné práce techniků.
 
-
-	\newpage
-
-	\noindent\makebox[\linewidth]{\rule{16cm}{0.4pt}}
-
-	\subsection*{Reference}
+	\subsubsection*{Reference}
 	Systém nasazen ve všech ordinacích společnosti \texttt{U zubní víly a.s}.
 
+	\subsection*{Název služby: Systém pro správu financí}
 
-	klíče, papírově vše, pipeline, technical, externí poskytovatel, pro zákazníky výše uvedených služeb,
-	vlastník oni
-
-	\section*{Název služby: Systém pro správu financí}
-
-	\subsection*{Popis služby}
+	\subsubsection*{Popis služby}
 	\begin{itemize}
 		\item Elektronický systém pro správu financí
 		\item Kompletní přehled o financíh a vedení účetnictví
@@ -229,28 +174,25 @@
 		\item Statistiky obratu
 	\end{itemize}
 
-	\subsection*{Reference}
+	\subsubsection*{Reference}
 	Systém je dlouhodobě nasazen ve všech ordinacích společnosti \texttt{U zubní víly a.s}.
 
-	\subsection*{Typ služby}
-	Business typ
+	\subsubsection*{Typ služby: Business}
 
-	\subsection*{Stav služby}
-	Pipeline
+	\subsubsection*{Stav služby: Pipeline}
 
-	\subsection*{Plány}
+	\subsubsection*{Plány}
 	V současné době probíhá intergrace systému Elektronické evidence tržeb.
 
-	\subsection*{Závislosti}
+	\subsubsection*{Závislosti}
 	Hosting, případně vlastní server v rámci IT infrastruktury.
 
-	\subsection*{Cena}
-	50 000 Kč
+	\subsubsection*{Cena: 50 000 Kč}
 
-	\subsection*{SLA}
+	\subsubsection*{SLA}
 	Ochrana osobních údajů, pravidelné zálohování dat, částečná funkcionalita i při výpadku internetového připojení
 
-	\subsection*{Vlastnictví služby}
-	Splečnost \texttt{iZUB s.r.o}
+	\subsubsection*{Vlastnictví služby}
+	Společnost \texttt{iZUB s.r.o}
 
 \end{document}
