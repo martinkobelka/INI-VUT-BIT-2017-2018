@@ -14,7 +14,7 @@
 
 \usepackage{background}
 \setlength{\headheight}{3em} 
-
+\newcommand{\subsectionbreak}{\clearpage}
 
 \begin{document}
 	\input{01/src/_titlepage.tex}
@@ -37,7 +37,7 @@
 
 	\vspace {1.5em}
 
-	\subsection*{Název služby: Správa kartotéky pacientů}
+	\section*{Název služby: Správa kartotéky pacientů}
 
 	\subsubsection*{Popis služby}
 	\begin{itemize}
@@ -56,11 +56,11 @@
 	\subsubsection*{Balíčky}
 
 	\begin{itemize}		
-		\item \textbf{Balíček STANDARD} Základní balíček pro malé ordinace. Maximální počet pacientů 512, bez možnosti vlastního vzhledu, školení není v ceně. Omezení na jednu ordinaci v provozu; cena 100 \% základní ceny.
+		\item \textbf{Balíček STANDARD} Základní verze pro malé ordinace. Maximální počet pacientů 512, bez možnosti vlastního vzhledu, školení není v ceně. Omezení na jednu ordinaci v provozu; cena 100 \% základní ceny.
 
-		\item \textbf{Balíček MEDIUM} Střední balíček pro středně velké ordinace. Maximální počet pacientů 2048, bez možnosti vlastního vzhledu, V ceně je základní školení pracovníků včetně možnosti pžipojení až tří ordinací. Cena 200 \% základní ceny.
+		\item \textbf{Balíček MEDIUM} Střední verze pro středně velké ordinace. Maximální počet pacientů 2048, bez možnosti vlastního vzhledu, V ceně je základní školení pracovníků včetně možnosti připojení až tří ordinací. Cena 200 \% základní ceny.
 
-		\item \textbf{Balíček PRO} Neomezený pro velké velké ordinace a zubařské korporáty. Maximální počet pacientů neomezen, možnost vlastního vzhledu, V ceně je důkladné proškolení pracovníků. Neomezené množství ordinací. Pětinásobná cena oproti balíčku STANDARD.
+		\item \textbf{Balíček PRO} Neomezený pro velké ordinace a zubařské korporáty. Maximální počet pacientů neomezen, možnost vlastního vzhledu, V ceně je důkladné proškolení pracovníků. Neomezené množství ordinací. Pětinásobná cena oproti balíčku STANDARD.
 	\end{itemize}
 
 	\subsubsection*{SLA}
@@ -78,7 +78,7 @@
 
 	Vlastníkem je společnost \texttt{IZUB s.r.o.}, interní služba apolečnosti \texttt{IZUB s.r.o.}
 
-	\subsection*{Název služby: Webové stránky s rezervačním systémem}
+	\section*{Název služby: Webové stránky s rezervačním systémem}
 
 	\subsubsection*{Popis služby}
 	\begin{itemize}
@@ -95,7 +95,7 @@
 	Plné nasazení služby u společností \texttt{U zubní víly a.s.} a \texttt{Ordinace U kováře}.
 
 	\subsubsection*{Ceník}
-	Základní cena 30 000 Kč, Plně respoonzivní design + 30 \% ze základní ceny, vlastní redakční systém + 50 \% ze základní ceny, aktualizace obsahu 600 Kč za hodinu práce editora.
+	Základní cena 30 000 Kč, Plně responzivní design + 30 \% ze základní ceny, vlastní redakční systém + 50 \% ze základní ceny, aktualizace obsahu 600 Kč za hodinu práce editora.
 
 	\subsubsection*{Plány}
 	Plánujeme vlastní mobilní aplikaci.
@@ -109,7 +109,7 @@
 	\subsubsection*{Vlastnictví služby}
 	Interní služba \texttt{iZUB s.r.o}
 
-	\subsection*{Název služby: Zprostředkování a zajištění hostingu aplikací}	
+	\section*{Název služby: Zprostředkování a zajištění hostingu aplikací}	
 
 	\subsubsection*{Popis služby}
 	\begin{itemize}
@@ -122,7 +122,7 @@
 	\subsubsection*{Stav služby: Katalog služeb}
 
 	\subsubsection*{Plány}
-	Plánujeme nabídku hostování služeb na naššich serveru
+	Plánujeme nabídku hostování služeb na našich serveru
 
 	\subsubsection*{Balíčky}
 	Služba je poskytována pouze v jednom balíčku, ke kterému je nutno přičíst práci servisních techniků. 
@@ -137,9 +137,9 @@
 	Službu využívá společnost \texttt{Toothland s.r.o}.
 
 	\subsubsection*{Závislosti}
-	Službu nelze objednat samostatně ale pouze jako doplňkovou službu ke službě kterou je třeba hostovat.
+	Službu nelze objednat samostatně, ale pouze jako závislost jiné služby.
 
-	\subsection*{Název služby: IT infrastruktura}
+	\section*{Název služby: IT infrastruktura}
 
 	\subsubsection*{Popis služby}
 	\begin{itemize}
@@ -175,8 +175,8 @@
 	\subsubsection*{Popis služby}
 	\begin{itemize}
 		\item Elektronický systém pro správu financí
-		\item Kompletní přehled o financíh a vedení účetnictví
-		\item Výpis placených zákroků pro pacienta, výpis pro pijišťovnu
+		\item Kompletní přehled o financích a vedení účetnictví
+		\item Výpis placených zákroků pro pacienta, výpis pro pojišťovnu
 		\item Statistiky obratu
 	\end{itemize}
 
