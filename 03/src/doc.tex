@@ -1,0 +1,29 @@
+\documentclass[11pt, a4paper, titlepage]{article}
+
+% Set document dimensions
+\usepackage[paper=a4paper,top=2cm,left=1.8cm,right=1.8cm,bottom=2cm, includefoot]{geometry}
+\usepackage{float}
+\usepackage[final]{pdfpages} % inludesvg
+
+% Czech fonts
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{fancyhdr}
+\usepackage{background}
+\setlength{\headheight}{3em} 
+\newcommand{\subsectionbreak}{\clearpage}
+
+\begin{document}
+	\input{01/src/_titlepage.tex}
+	\pagestyle{fancy}
+	\rhead{\includegraphics[height=3em]{./assets/teeth.png}}
+	\lfoot{\emph{VUT FIT - INI}}
+	\rfoot{\emph{Tým INIcializace}}
+
+	\begin{center}
+		\section*{Finační analýza}
+	\end{center}
+
+	
+\end{document}
