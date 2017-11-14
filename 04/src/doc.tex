@@ -1,0 +1,128 @@
+\documentclass[11pt, a4paper, titlepage]{article}
+
+% Set document dimensions
+\usepackage[paper=a4paper,top=2cm,left=1.8cm,right=1.8cm,bottom=2cm, includefoot]{geometry}
+\usepackage{float}
+\usepackage[final]{pdfpages} % inludesvg
+
+% Czech fonts
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{fancyhdr}
+\usepackage{background}
+\setlength{\headheight}{3em} 
+\newcommand{\subsectionbreak}{\clearpage}
+
+\begin{document}
+	\input{04/src/_titlepage.tex}
+	\pagestyle{fancy}
+	\rhead{\includegraphics[height=3em]{./assets/teeth.png}}
+	\lfoot{\emph{VUT FIT - INI}}
+	\rfoot{\emph{Tým INIcializace}}
+
+	\begin{center}
+		\section*{Service Design Package}
+	\end{center}
+
+	\subsection*{Správa kartotéky pacientů}
+
+	Vlastníkem a stranou zodpovědnou za dodání služby je společnost IZUB. 
+
+	\subsubsection*{Obecná ustanovení}
+
+	Společnost IZUB se zavazuje k dodání služby Správa kartotéky pacientů, dále jen Služby, do dvou kalendářních měsíců od podpisu smlouvy o dodání Služby. V případě porušení tohoto limitu je sjednána sankce ve výši kupní ceny pro dodavatele. Dodavatel se taktéž zavazuje k předání kompletní dokumentace ke Službě, včetně jejího testovacího rozhraní. Kupní cena 
+
+	\subsubsection*{Požadavky na službu}
+
+	\begin{itemize}
+		\item Dodavatel se zavazuje dle obecných ustanovaní k dodání Služby do dvou kalendářních měsíců od podpisu a potvrzení kupní smlouvy ke Službě. 
+		\item Dále se dodavatel zavazuje ke validaci, verifikaci i zpětné kontrole specifických požadavků odběratele Služby.
+		\item Dodavatel zaručuje technickou podporu dříve zavedenou v ustanovení SLA s parametry definovanými tamtéž.
+	\end{itemize}
+
+	\subsubsection*{Funkční požadavky}
+
+	\begin{itemize}
+		\item Dodavatel zaručuje dodání Služby dle popisu Služby, včetně specifických požadavků a změn odběratele definovaných v kupní smlouvě Služby.
+		\item Dodavatel dále nabízí možnost dodání služby IT infrastruktura jako nezbytnou součást pro provoz Služby. Tato podpůrná služba by případně byla obsahem dodatečné kupní smlouvy, mimo kupní smlouvu o Službě.  
+	\end{itemize}
+
+	\subsubsection*{Bezpečnostní požadavky}
+
+	\begin{itemize}
+		\item Dodavatel se zaručuje pd zabezpečení Služby a jejích dat dle nejnovějších a modeních bezpečnostních norem a principů zabezpečení IT systémů.
+		\item Autentizační údaje jsou dle bezpečnostních požadavků šifrovány a ukládány ve formě otisku tak, aby nemohlo dojít k jejich zneužití.
+		\item Dodavatel se zavazuje k zajištění služby pomocí odpovídajících bezpečnostních síťových prvků k zamezení ohrožení z venkovní sítě. 
+	\end{itemize}
+
+	\subsubsection*{Požadavky na předpisy}
+
+	\begin{itemize}
+		\item Dodavatel se zavazuje k dodržování smlouvných podmínek definovaných v SLA, OLA a UC pro Službu.
+		\item Odběratel se zavazuje k výhradnímu použití Služby pro ukládání, správu a modifikaci dat určených pro Službu.
+	\end{itemize}
+
+	\subsubsection*{Architektonické požadavky}
+
+	\begin{itemize}
+		\item Dodavatel se zavazuje k použití standardních a moderních architektonických řešení ve smyslu k realizaci Služby. 
+		\item Tato řešení pro Službu musí být všeobecně známá v IT světě k dostupnému servisu a případné migraci v rámci Služby.
+	\end{itemize}
+
+	\subsubsection*{Požadavky na rozhraní}
+
+	\begin{itemize}
+		\item Dodavatel se zavazuje k vytvoření uživatelsky přívětivého, použitelného a funkčního grafického rozhraní pro ovládání Služby.
+	\end{itemize}
+
+	\subsubsection*{Požadavky pro migraci}
+
+	\begin{itemize}
+		\item Dodavatel se zavazuje k zprostředkování migrace dat z předchozího systému odběratele do novéh instalace Služby a to bez dalších náhrad kromě těch definovaných dle balíčku Služby.
+	\end{itemize}
+
+	\subsubsection*{Operační požadavky}
+
+	\begin{itemize}
+		\item Dodavatel zaručuje plnou zodpovědnost, podporu i spolupráci při odstraňování vzniklých rizik, problémů a incidentů.
+		\item Zodpovednost dodavatele dále spočívá ve správě, konfiguraci a kontrole záloh dat vázaných ke Službě.
+	\end{itemize}
+
+	\subsubsection*{Požadavky na práva}
+
+	\begin{itemize}
+		\item Práva pro přístup k Službě vlastní výhradně uživatelé Služby, tedy konkrétní ordinace a kanceláře, ve kterých je Služba provozována.
+		\item Přístup dodavatele je možný pouze v případě výslovného či písemného souhlasu s přístupem ke Službě od odběratele.
+	\end{itemize}
+
+	\subsection*{Servisní operace Služby}
+
+	\begin{itemize}
+		\item Dodavatel se zaručuje k zodpovědnému přístupu k řešení rizik spojených se Službou.
+		\item Princip a odstranění rizik je pouze v kompetenci dodavatele s povinností informovat a popsat vzniklý problém pro odběratele.
+		\item Odběratel má dále právo na ziskání dat z monitorovacích systémů ke Službě poskytovaných dodavatelem.
+		\item Dodavatel dále zaručuje realizaci a dodání uživatelské dokumentace pro provoz, správu a ovládání rozhraní Služby.
+		\item V případě incidentu na Službě je dodavatel zodpovědný za bezprostřední osttaní vzniklého incidentu a informování odběratele o odstranění incidentu.
+	\end{itemize}
+
+	\subsection*{vylepšování}
+
+	\begin{itemize}
+		\item Dodavatel je zodpovědný za aktualizace a optimalizace procesů v rámci Služby.
+		\item Tyto servisní aktualizace je povinen dodavatel realizovat v periodických intervalech po informování o těchto aktualizacích Služby odběratele.  
+	\end{itemize}
+
+	\subsection*{Technická a organizační realizace}
+
+	\subsubsection*{Rozdělení Služby}
+
+	\begin{itemize}
+		\item 
+	\end{itemize}
+
+
+
+
+
+\end{document}
