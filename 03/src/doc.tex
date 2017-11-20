@@ -15,47 +15,139 @@
 \newcommand{\subsectionbreak}{\clearpage}
 
 \begin{document}
-	\input{01/src/_titlepage.tex}
+	\input{03/src/_titlepage.tex}
 	\pagestyle{fancy}
 	\rhead{\includegraphics[height=3em]{./assets/teeth.png}}
 	\lfoot{\emph{VUT FIT - INI}}
 	\rfoot{\emph{Tým INIcializace}}
 
 	\begin{center}
-		\section*{Finační analýza}
+		\section*{Ujednání o SLA, OLA a UC}
 	\end{center}
 
 	\noindent Jsme společnost IZUB a poskytujeme komplexní řešení pro malé, střední i ty největší zubařské ordinace nejen na území České i Slovenské republiky.
 
-	\noindent Následující dokument obsahuje smlouvu SLA, OLA a UC náležící k námi poskytované službě Správa kartotéky pacientů.
+	\noindent Následující dokument obsahuje smlouvu SLA, OLA a UC náležící k námi poskytovaným službám Správa kartotéky pacientů a Zprostředkování a zajištění hostingu aplikací.
 
 	\noindent\makebox[\linewidth]{\rule{17.5cm}{0.4pt}}
 
 	\vspace {1.5em}
 
-	\subsection{Service level agreement - Správa kartotéky pacientů}
+	\section{Service Level Agreement - Správa kartotéky pacientů}
 
-	Smlouva SLA sepsána dne 6. listopadu 2017 v Brně všechny náležitosti a povinnosti všech účastněněných stran zainteresovaných do služby Správa kartotéky pacientů.
+	Smlouva SLA sepsána dne 6. listopadu 2017 v Brně, zahrnuje všechny náležitosti a povinnosti obou zúčastněných stran zainteresovaných do služby Správa kartotéky pacientů, dále jen Služba.
 
-	\subsubsection*{Okolnosti uzavření smlouvy}
+	\subsection*{Okolnosti uzavření smlouvy}
 
-	\noindent Smlouva nabývá v platnost v den uzavření smluvy, to jest v den zavedení služby Správa kartotéky pacientů. Smlouva pozbývá platnosti poslední den v měsíci s ukončením poskytování dané služby.
-	\vspace {8pt}
-	\noindent V případě porušení smlouvy nastává při neschopnosti kontaktovat zákazníka do 12. hodin zablokování veškerých služeb a při vzájemné sehodě s odstoupením od smlouvy sankce ve výši dvojnásobku měsíčního paušálu poskytované služby a nemožnost objednání služeb naší společnosti.
+	\noindent Smlouva nabývá v platnost v den uzavření smlouvy, to jest v den zavedení služby Správa kartotéky pacientů. Smlouva standardně pozbývá platnosti poslední den v měsíci s ukončením poskytování dané služby, je tedy poskytována na dobu neurčitou.
 
-	\subsubsection*{Zodpovědné osoby}
+	\noindent V případě porušení podmínek smlouvy nastává při neschopnosti kontaktovat zákazníka do 12 hodin zablokování veškerých služeb a při vzájemné neshodě s odstoupením od smlouvy sankce ve výši pětinásobku měsíčního paušálu za poskytovanou službu a striktní zamezení další spolupráce.
 
+	\subsection*{Zainteresované osoby}
+	\begin{enumerate}
+		\item Martin Novák, ředitel klientské společnosti
+		\item Ivan Černý, ředitel společnosti IZUB
+		\item David Nguyen, vedoucí IT oddělení IZUB
+	\end{enumerate}
 
+	\subsection*{Popis použití služby}
 
+	\noindent Služba je primárně určena pro standardní práci s kartotékou pacientů, které je možné v rámci kartotéky přidávat, upravovat jejich zdravotní karty, exportovat a dále s nimi pracovat pro běžnou agendu provozu ordinace.
 
+	\subsection*{Osoby zodpovědné za provoz služby}
+	\begin{enumerate}
+		\item Karel Korálek, vedoucí projektu
+		\item František Evžen, manager provozu Služby
+	\end{enumerate}
 
-	\subsection{Operational level agreement - Správa kartotéky pacientů}
+	\subsection*{Zpětná odezva z provozu služby}
 
-	Smlouva OLA sepsána dne 6. listopadu 2017 v Brně všechny náležitosti a povinnosti všech účastněněných stran zainteresovaných do služby Správa kartotéky pacientů.
+	\noindent Společnost poskytovatele připraví platformu pro reportování chyb ze strany klienta. Tento systém je nezávislý na Službě, plně pod správou společnosti poskytovatele. Je v gesci vedoucího IT oddělení poskytovatele na tyto reporty proaktivně reagovat a řešit je. Taktéž je povinností společnosti poskytovatele agregovat data o použití systému a z těchto dat vytvářet přehledy o využití Služby pro stranu klienta.
 
-	\subsection*{Underpinning Contract - Správa kartotéky pacientů}
+	\subsection*{Provozní doba Služby}
+
+	\noindent Poskytovatel garantuje dostupnost služby 24 hodin denně, 7 dní v týdnu s výjimkou plánovaných odstávek pro údržbu dat. Tyto termíny jsou určeny dle oboustranné dohody poskytovatele a klienta Služby. 
+
+	\subsection*{Závazky}
+
+	\noindent Poskytovatel ručí za bezproblémový chod Služby a její případné výpadky, včetně případných plánovaných, bezprostředně oznamovat straně odběratele. Poskytovatel dále garantuje ochranu a zálohování dat ze Služby, zálohování včetně ochrany v plně dostatečné míře dané smluvním dodatkem k SLA. Strana klienta se zavazuje k plnému plnění podmínek o financování Služby, včetně spolupráce zodpovědných osob na odstraňování chyb na Službě.
+
+	\subsection*{Uživatelská a technická podpora}
+
+	\noindent Poskytovatel zaručuje provoz telefonní linky pro hlášení poruch Služby, včetně e-mailového rozhraní pro tuto linku.
+
+	\subsection*{Ochrana dat Služby}
+
+	\noindent Poskytovatel se zavazuje vědomé ochraně dat plynoucích z provozu Služby, včetně aktivního jednání proti zneužití dat Služby.
+
+	\subsection*{Cenový model Služby}
+
+	\noindent Za každé porušení smlouvy o Službě ze strany poskytovatele je poskytovatel penalizován procentuální sazbou z ceny Služby. Její výše se určuje dle závažnosti pravidel, pro nejzávažnější porušení od 70 \% a lineárně níže dle definice sazeb.
+
+	\section{Operational Level Agreement - Správa kartotéky pacientů}
+
+	Smlouva OLA sepsána dne 6. listopadu 2017 v Brně, zahrnuje všechny náležitosti a povinnosti obou zúčastněných stran zainteresovaných do služby Správa kartotéky pacientů, dále jen Služba.
+
+	\subsection*{Okolnosti smlouvy}
+
+	\noindent Smlouva nabývá v platnost v den uzavření smluvy, to jest v den zavedení služby Správa kartotéky pacientů. Smlouva standarně pozbývá platnosti poslední den v měsíci s ukončením poskytování dané služby, je tedy poskytována na dobu neurčitou.
+
+	\subsection*{Kontaktní osoby}
+	\begin{enumerate}
+		\item Ivan Černý, ředitel společnosti IZUB
+		\item František Nguyen, technické oddělení IZUB
+	\end{enumerate}
+
+	\subsection*{Technické specifikace platné pro Službu}
+
+	Vedoucí projeku je zodpovědný za použití plné technické specifikace pro realizaci Služby, včetně platných zákonů na území České republiky. V rámci toho je nutné zdůraznit Zákon o ochraně osobních údajů včetně plných kompetencí ÚOOÚ.
+
+	\subsection*{Cenový model}
+
+	Osobám přímo realizující Službu přísluší finanční prémie v rámci jejich měsíční mzdy, a to ve výši stanovené vedoucím oddělení, do které zaměstnanec spadá. Celková výše prémií za Službu je přímo závislá na finančním objektu zisků ze Služby. 
+
+	\section*{Underpinning Contract - Zprostředkování a zajištění hostingu aplikací}
 	
-	Smlouva UC sepsána dne 6. listopadu 2017 v Brně všechny náležitosti a povinnosti všech účastněněných stran zainteresovaných do služby Správa kartotéky pacientů.
+	Smlouva UC sepsána dne 6. listopadu 2017 v Brně všechny náležitosti a povinnosti všech zúčastněných stran zainteresovaných do služby Zprostředkování a zajištění hostingu aplikací, dále jen Služba.
+
+	\subsection*{Kontaktní osoby smluvních stran}
+	\begin{tabular}{l|llll}
+		strana    & společnost                         & kontaktní osoba    &                  & \\
+		\hline \\
+		dodavatel & Droždí s.r.o., Trnkova 92, Aš & Věneslava Hůlková  & +420 595 637 478 & v.hulkova@drozdi.cz \\
+		odběratel & IZUB s.r.o., Cejl 123, Praha       & Bohuslav Maxmilián & +420 278 663 774 & maxmilian@izub.com \\
+	\end{tabular}
+
+	\subsection*{Termíny kolem smlouvy}
+
+	Smlouva je platná na dobu určitou, a to konkrétně jednoho roku od počátku poskytování této služby. Poté je možné ji automaticky prodloužit o další rok platnosti. Předčasné ukončení smlouvy je plně validní, bez navrácení financí poskytnutných za provoz služby. 
+
+	\subsection*{Popis a přínosy služby}
+
+	Služby poskytuje technické prostředí pro provoz klientských aplikací určených běhu na hostingu. Jedná se tedy o poskytnutí kombinace serveru a datového prostoru.
+
+	\subsection*{Komunikace mezi stranami}
+
+	Kontakt je preferován pomocí telefonu, případně e-mailem. Osobní schůzka je možná po předchozí domluvě. V obou případech jsou pro kontakt určeny osoby zastupující obě smluvní strany.
+
+	\subsection*{Smluvní termíny podpory služby}
+
+	Podpora pro službu je zajištěna 24 hodin denně, sedm dní v týdnu. Výpadky je nutné řešit do dvou hodin od nahlášení problému.
+
+	\subsection*{Technická specifikace}
+
+	Pro hosting je zajištěna certifikace IEEE 7456321, ISO 7400 (NAND) a ECO++.
+
+	\subsection*{Povinnosti smluvních stran}
+
+	Povinností dodavatele je dodržování předem stanovaných podmínek. Povinností odběratele je plnění finančních závazků.
+	Výpadky jsou penalizovány dle následujícího vzorce:
+	\[
+		sankce = 42 \cdot \sum_{i = 0}^{pocet\,hodin} \sum_{j = 0}^{i - 1} i \cdot j
+	\]
+
+	\subsection*{Cenový model}
+	V případě odstoupení od smlouvy ze strany dodatatele je povinen uhradit finační výdaje na přechod služeb k jinému dodavateli služeb obdobného formátu. V případě zálohovaného financování služby je povinen navrátit zálohy.
 
 	
 \end{document}
